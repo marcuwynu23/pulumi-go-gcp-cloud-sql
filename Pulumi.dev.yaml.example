@@ -1,0 +1,8 @@
+config:
+  gcp:project: your-project-id
+  gcp:region: us-central1
+  cloudSql:instanceName: my-sql-instance
+  cloudSql:databaseName: mydatabase
+  cloudSql:databaseUser: myuser
+  cloudSql:databaseVersion: MYSQL_8_0
+  cloudSql:tier: db-f1-micro

@@ -1,0 +1,25 @@
+name: pulumi-go-gcp-cloud-sql
+description: A Pulumi Go project for Google Cloud SQL
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: gcp-go
+  gcp:region:
+    description: 'The GCP region for Cloud SQL (Free Tier: us-west1, us-central1, us-east1)'
+    value: us-central1
+  cloudSql:instanceName:
+    description: The name of the Cloud SQL instance
+    value: ''
+  cloudSql:databaseName:
+    description: The name of the initial database to create
+    value: ''
+  cloudSql:databaseUser:
+    description: The name of the initial database user to create
+    value: ''
+  cloudSql:databaseVersion:
+    description: The database engine version (MYSQL_8_0, POSTGRES_14, POSTGRES_15)
+    value: MYSQL_8_0
+  cloudSql:tier:
+    description: 'The machine type to use (Free Tier: db-f1-micro)'
+    value: db-f1-micro
